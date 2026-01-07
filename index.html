@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AutoReason | Rule-Based Autonomous Driving</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="hero">
+      <h1>AutoReason</h1>
+      <p class="subtitle">
+        A rule-based autonomous driving simulation designed for learning,
+        transparency, and demonstration.
+      </p>
+
+      <p class="description">
+        AutoReason uses simple <strong>if–then logic</strong> to control a
+        virtual car. Instead of black-box AI models, every decision is
+        predictable, explainable, and easy to understand. This project
+        demonstrates how autonomous behavior can be built using basic reasoning
+        rules.
+      </p>
+
+      <a href="#simulation" class="scroll-btn">View Simulation ↓</a>
+    </section>
+
+    <section id="simulation" class="simulation-section">
+      <div id="game-wrapper"><canvas id="unity-canvas"></canvas></div>
+
+      <div class="instructions">
+        <h2>How to Use</h2>
+        <h4>Path Creator Mode</h4>
+        <ul>
+          <li>
+            Move the camera by dragging the mouse while pressing middle mouse
+            button.
+          </li>
+          <li>Use the scrollwheel to zoom in and out.</li>
+          <li>Right click to change the block rotation.</li>
+          <li>Click green button to place the starting block.</li>
+          <li>Construct the path using straight and curve blocks given.</li>
+          <li>
+            After the path is finished click the red button and place the end
+            block.
+          </li>
+          <li>If you are satisfied with the path click the car button.</li>
+        </ul>
+        <h4>Simulation Mode</h4>
+        <ul>
+          <li>Move the mouse while left clicking to move the camera.</li>
+          <li>Right click to toggle guide lines which shows what AI sees.</li>
+          <li>Press R at any time to create a new simulation.</li>
+          <li>
+            You can observe the AI ouputs from the control layout on top right
+            of the corner.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <script src="autoreason-build/Build/autoreason-build.loader.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
