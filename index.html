@@ -26,10 +26,16 @@
     </section>
 
     <section id="simulation" class="simulation-section">
-      <div id="game-wrapper">
-        <img src="./bouncing-circles.svg" alt="loading" /><canvas
-          id="unity-canvas"
-        ></canvas>
+      <div class="sim-shell">
+        <div class="sim-toolbar">
+          <span class="sim-title">Simulation</span>
+          <button id="fullscreen-btn">⛶ Fullscreen</button>
+        </div>
+
+        <div id="game-wrapper">
+          <img src="./bouncing-circles.svg" alt="loading" />
+          <canvas id="unity-canvas"></canvas>
+        </div>
       </div>
 
       <div class="instructions">
@@ -54,7 +60,9 @@
         <ul>
           <li>Move the mouse while left clicking to move the camera.</li>
           <li>Right click to toggle guide lines which shows what AI sees.</li>
-          <li>Press R at any time to create a new simulation.</li>
+          <li>Press R to create a new simulation.</li>
+          <li>Press S to restart the current simulation.</li>
+          <li>Press M to mute the audio.</li>
           <li>
             You can observe the AI ouputs from the control layout on top right
             of the corner.
